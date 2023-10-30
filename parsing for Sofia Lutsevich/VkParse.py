@@ -87,12 +87,12 @@ driver.get('https://onlinetestpad.com/ru/account/login?ReturnUrl=/')  # get the 
 
 email_input = driver.find_element("id", "txtEmail")
 email_input.clear()
-email_input.send_keys("sofiyasiarheyeva@gmail.com")  # login
+email_input.send_keys("example@gmail.com")  # login
 
 password_input = driver.find_element("id", "txtPassword")
 password_input.clear()
 time.sleep(2)
-password_input.send_keys("SofiaTest987654321")  # password
+password_input.send_keys("12345678")  # password
 password_input.send_keys(Keys.ENTER)
 link = input()
 driver.get(link)
